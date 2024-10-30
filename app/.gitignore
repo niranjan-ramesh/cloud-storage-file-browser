@@ -16,7 +16,7 @@ workers-site
 /build
 
 # app config
-src/config.js
+# src/config.js
 
 # misc
 .DS_Store
