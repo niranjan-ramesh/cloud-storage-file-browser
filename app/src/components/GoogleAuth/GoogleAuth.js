@@ -41,12 +41,8 @@ const GoogleAuth = ({ setIdToken, setProfile }) => {
         />
         {error ? "Something went wrong" : "Sign In"}
       </Header>
-      <Modal.Content>
-        <GoogleLogin
-          onSuccess={onSuccess}
-          onError={onFailure}
-          style={{ display: "block", margin: "0 auto" }}
-        >
+      <Modal.Content style={{ display: "flex", justifyContent: "center" }}>
+        <GoogleLogin onSuccess={onSuccess} onError={onFailure}>
           <Button primary disabled={signingIn}>
             Sign In with Google
           </Button>
